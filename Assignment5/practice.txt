@@ -1,0 +1,8 @@
+.text
+  main:
+li $t0, 5
+li $v0, 10
+
+
+
+.data

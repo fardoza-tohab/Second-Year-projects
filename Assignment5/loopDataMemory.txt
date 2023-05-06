@@ -1,0 +1,13 @@
+.text
+li $t0, 0x10010000
+
+RunLoop:
+
+
+
+j RunLoop
+
+
+
+.data
+cake: .ascii "the cake is a lie"

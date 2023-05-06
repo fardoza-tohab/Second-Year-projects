@@ -1,0 +1,73 @@
+beq $t4, $t0, print_results     # if the counter is equal to the number of rotations then we're done
+	jal initialize_again		# reset pointers for next rotation
+
+	##first_line
+
+	## first character
+	move $a1, $t3		# load address of input_3
+	lb $t5, 0($a1)		# get the current char
+	sb $t5, 0($s1)		# store the current char
+	addi $s1, $s1, 1	# advance destination pointer  	
+
+	## second character
+	move $a1, $t2		# load address of input_2
+	lb $t5, 0($a1)		# get the current char
+	sb $t5, 0($s1)		# store the current char
+	addi $s1, $s1, 1	# advance destination pointer
+
+	## third character
+	move $a1, $t1		# load address of input_1	
+	lb $t5, 0($a1)		# get the current char
+	sb $t5, 0($s1)		# store the current char
+	addi $s1, $s1, 1	# advance destination pointer 
+
+
+	##second_line
+
+	## first character
+	move $a1, $t3		# load address of input_3
+	lb $t5, 1($a1)		# get the current char
+	sb $t5, 0($s2)		# store the current char
+	addi $s2, $s2, 1	# advance destination pointer  	
+
+	## second character
+	move $a1, $t2		# load address of input_2
+	lb $t5, 1($a1)		# get the current char
+	sb $t5, 0($s2)		# store the current char
+	addi $s2, $s2, 1	# advance destination pointer
+
+	## third character
+	move $a1, $t1		# load address of input_1
+	lb $t5, 1($a1)		# get the current char
+	sb $t5, 0($s2)		# store the current char
+	addi $s2, $s2, 1	# advance destination pointer 
+
+
+	##third_line
+
+	## first character
+	move $a1, $t3		# load address of input_3
+	lb $t5, 2($a1)		# get the current char
+	sb $t5, 0($s3)		# store the current char
+	addi $s3, $s3, 1	# advance destination pointer  	
+
+	## second character
+	move $a1, $t2		# load address of input_2
+	lb $t5, 2($a1)		# get the current char
+	sb $t5, 0($s3)		# store the current char
+	addi $s3, $s3, 1	# advance destination pointer
+
+	## third character
+	move $a1, $t1		# load address of input_1
+	lb $t5, 2($a1)		# get the current char
+	sb $t5, 0($s3)		# store the current char
+	addi $s3, $s3, 1	# advance destination pointer 
+
+	jal initialize_again
+	li $t6, 0		# reset counter used in reload_registers to 0
+	jal get_registers
+	
+	addi $t4, $t4, 1	# decrement $t4
+	j clockwise		# jump to top of loop
+	
+	
