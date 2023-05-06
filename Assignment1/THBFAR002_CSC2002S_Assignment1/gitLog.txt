@@ -1,0 +1,17 @@
+commit bf9ea123a58a9d74af77422ab99ec74c4d2aeb8d
+Author: thbfar002 <fardozatohab99@gmail.com>
+Date:   Sun Aug 22 22:57:42 2021 +0200
+
+    added javadoc comments, modified performance class to do timings 20 times
+
+commit c50a72abfc2a5abf9546b150c2d054be8d645b56
+Author: thbfar002 <fardozatohab99@gmail.com>
+Date:   Sat Aug 21 11:01:14 2021 +0200
+
+    Added all necessary .java files to conduct experiment
+
+commit 093ba6bf58a95c57535fc50c2eb83ee96d5fe4e0
+Author: thbfar002 <fardozatohab99@gmail.com>
+Date:   Mon Aug 9 22:18:47 2021 +0200
+
+    Added MedianFilter skeleton class to read in the sampleInput as well as the Makefile and relevant directories

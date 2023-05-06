@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"<Unnamed>","l":"MedianFilter"},{"p":"<Unnamed>","l":"MFArray"},{"p":"<Unnamed>","l":"ParallelMF"},{"p":"<Unnamed>","l":"Performance"}]
